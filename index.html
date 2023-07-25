@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes App</title>
+  </head>
+  <body>
+    <h1>Notes App</h1>
+
+   
+    <form id="addNoteForm">
+      <label for="noteContent">Note Content:</label>
+      <input type="text" id="noteContent" required />
+
+      <label for="noteCategory">Category:</label>
+      <select id="noteCategory" required>
+        <option value="Task">Task</option>
+        <option value="Random Thought">Random Thought</option>
+        <option value="Idea">Idea</option>
+      </select>
+
+      <button type="submit">Add Note</button>
+    </form>
+
+
+    <table id="notesTable">
+      <thead>
+        <tr>
+          <th>Time of Creation</th>
+          <th>Note Content</th>
+          <th>Note Category</th>
+          <th>Dates Mentioned</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="notesTableBody">
+     
+      </tbody>
+    </table>
+
+
+    <h2>Summary</h2>
+    <table id="summaryTable">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Active Notes Count</th>
+          <th>Archived Notes Count</th>
+        </tr>
+      </thead>
+      <tbody id="summaryTableBody">
+   
+      </tbody>
+    </table>
+
+    <button id="showArchivedButton">View Archived Notes</button>
+
+ 
+    <div id="archivedNotesModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Archived Notes</h3>
+        <table id="archivedNotesTable">
+        
+        </table>
+      </div>
+    </div>
+
+
+   
+  </body>
+</html>
