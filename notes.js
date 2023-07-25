@@ -148,14 +148,14 @@ let notesData = [
   function unarchiveNote(noteId) {
 	const noteToUnarchive = notesData.find((note) => note.id === noteId);
   
-	// Unarchive the note by setting the 'archived' property to false
+	
 	noteToUnarchive.archived = false;
   
-	// Render the updated tables
+	
 	renderNotesTable();
 	renderSummaryTable();
   
-	// Close the modal after unarchiving
+
 	const modal = document.getElementById("archivedNotesModal");
 	modal.style.display = "none";
   }
